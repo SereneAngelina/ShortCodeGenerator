@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  urlservice:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 5001:5001
+    container_name: urlservice
